@@ -1,0 +1,3 @@
+- Utiliser vue sur la HUB
+- Faire la suppression de domaine
+- Ordonner en fonction les domaines en fonction du nom
