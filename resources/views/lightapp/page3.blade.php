@@ -21,6 +21,60 @@
     margin-top: 10em
   }
 </style>
+<style type="text/css">
+  
+.iot-box{
+  margin: 5px
+}
+
+.iot-device{
+  width: 500px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  margin: 5px
+}
+
+.iot-device-control{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.iot-device-title{
+  font-weight: bold;
+  font-size: 1.2em
+}
+
+.iot-device-body{
+  font-weight: bold;
+  flex-grow: 1
+}
+
+.iot-device-items span{
+  margin-right: 20px
+}
+
+.iot-device-body2{
+  display: flex;
+  text-align: center;
+  font-weight: 100
+}
+
+.iot-device-body2 .data{
+  font-weight: 500
+}
+
+.iot-device-body2 .stats{
+  margin-right: 20px;
+  font-size: 1.2em;
+}
+
+.iot-device-ico{
+  margin-right: 20px
+}
+
+</style>
 
 <div class="container-fluid">
   <div class="row">

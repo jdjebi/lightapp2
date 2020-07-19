@@ -11,7 +11,11 @@
     </nav>
   </div>
 
-  <div class="m-10"></div>
+  <h2>Batiments</h2>
+  <hr>
+
+  <div class="m-5"></div>
+
 
   <div class="d-flex justify-content-around flex-wrap">
 
@@ -35,7 +39,7 @@
     </div>
 
     <div id='action-pad'>
-      <a class="action-pad-item-link" href="{{ route('lightapp.batiment') }}">
+      <a class="action-pad-item-link" href="{{ route('lightapp.batiment.dp') }}">
         <div>
           <div class="border action-pad-item p-4">
             <div>
@@ -54,7 +58,7 @@
     </div>
 
     <div id='action-pad'>
-      <a class="action-pad-item-link" href="{{ route('lightapp.batiment') }}">
+      <a class="action-pad-item-link" href="{{ route('lightapp.batiment.dp') }}">
         <div>
           <div class="border action-pad-item p-4">
             <div>

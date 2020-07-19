@@ -62,7 +62,8 @@ Route::middleware("auth")->group(function(){
   Route::get('/','LightApp\HubController@index')->name('lightapp.hub');
   Route::get('/app','LightApp\DomaineController@index')->name('lightapp.domaine');
   Route::get('/batiments','LightApp\Batiment\BatimentController')->name('lightapp.batiment');
-  Route::get('/batiments/restauration','LightApp\Batiment\CuisineController@index')->name('lightapp.batiment.cuisine');
+  Route::get('/batiments/restaurant','LightApp\Batiment\CuisineController@index')->name('lightapp.batiment.cuisine');
+  Route::get('/batiments/DP','LightApp\Batiment\DpController@index')->name('lightapp.batiment.dp');
   Route::get('/gestion/appareils','LightApp\Gestion\GestionController@index')->name('lightapp.gestion');
 });
 
