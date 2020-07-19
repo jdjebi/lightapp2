@@ -26,12 +26,12 @@
       <div>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item active" aria-current="page">Tableau de bord</li>
+            <li class="breadcrumb-item" aria-current="page">Tableau de bord</li>
           </ol>
         </nav>
       </div>
 
-      <div class="display-4 mt-5 text-center font-40 mb-4">Que voulez-vous créer ?</div>
+      <div class="display-4 mt-5 text-center font-40 mb-5">Administration</div>
 
       <div class="d-flex justify-content-around flex-wrap">
 
@@ -60,12 +60,12 @@
               <div class="border action-pad-item p-4">
                 <div>
                   <div class="text-center">
-                    <img class="resac-w-100" src="{{ asset('asset/imgs/app/room.svg') }}" alt="">
+                    <img class="resac-w-100" src="{{ asset('asset/imgs/app/alert.svg') }}" alt="">
                   </div>
                 </div>
                 <div class="text-center pt-3">
                   <div class="text-muted">
-                    <span class="font-20">Salle</span>
+                    <span class="font-20">Signalement</span>
                   </div>
                 </div>
               </div>
@@ -79,12 +79,12 @@
               <div class="border action-pad-item p-4">
                 <div>
                   <div class="text-center">
-                    <img class="resac-w-100" src="{{ asset('asset/imgs/app/device.svg') }}" alt="">
+                    <img class="resac-w-100" src="{{ asset('asset/imgs/app/blueprint.svg') }}" alt="">
                   </div>
                 </div>
                 <div class="text-center pt-3">
                   <div class="text-muted">
-                    <span class="font-20">Dispositifs</span>
+                    <span class="font-20">Hypervision</span>
                   </div>
                 </div>
               </div>

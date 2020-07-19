@@ -12,6 +12,8 @@
     </nav>
   </div>
 
+  <div class="text-center h2 mb-4">Restaurant de l'ESATIC</div>
+
 <div class="d-flex flex-wrap ">
 
 	<div>

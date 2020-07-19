@@ -51,7 +51,7 @@
                 <input id="pass-input" class="form-control" type="password" name="password" id="password" placeholder="Mot de passe">
               </div>
               <div class="mt-4">
-                <button id="submit-btn" class="btn btn-block btn-primary" name="button" v-bind:disabled="submit_btn">
+                <button id="submit-btn" class="btn btn-block text-white" name="button" v-bind:disabled="submit_btn" style="background-color: #009688;">
                 <span v-if="!submit_btn">Connexion</span>
                 <div v-if="submit_btn" class="loader spinner-border text-white spinner-border-sm d-none" role="status">
                   <span class="sr-only">Loading...</span>

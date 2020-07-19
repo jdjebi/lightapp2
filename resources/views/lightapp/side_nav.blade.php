@@ -1,3 +1,8 @@
+<style type="text/css">
+.sidebar .nav-link.active{
+  color: #009688;
+}
+</style>
 <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
   <div class="sidebar-sticky pt-3">
 
@@ -53,13 +58,13 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="{{ route('lightapp.batiment') }}">
+        <a class="nav-link" href="{{ route('lightapp.batiment.batd') }}#classe">
           <i class="fa fa-store-alt" style="color: #6d6413"></i> Salle de classe
         </a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="{{ route('lightapp.batiment') }}">
+        <a class="nav-link" href="{{ route('lightapp.batiment.batd') }}#salle_eau">
           <i class="fa fa-toilet-paper" style="color: #607d8b"></i> Salle d'eau
         </a>
       </li>

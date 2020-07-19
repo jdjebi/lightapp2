@@ -59,11 +59,11 @@ Route::middleware("guest")->group(function(){
 /* Application */
 
 Route::middleware("auth")->group(function(){
-  Route::get('/','LightApp\HubController@index')->name('lightapp.hub');
-  Route::get('/app','LightApp\DomaineController@index')->name('lightapp.domaine');
+  Route::get('/','LightApp\DomaineController@index')->name('lightapp.domaine');
   Route::get('/batiments','LightApp\Batiment\BatimentController')->name('lightapp.batiment');
   Route::get('/batiments/restaurant','LightApp\Batiment\CuisineController@index')->name('lightapp.batiment.cuisine');
   Route::get('/batiments/DP','LightApp\Batiment\DpController@index')->name('lightapp.batiment.dp');
+  Route::get('/batiments/batimentD','LightApp\Batiment\BatimentDController@index')->name('lightapp.batiment.batd');
   Route::get('/gestion/appareils','LightApp\Gestion\GestionController@index')->name('lightapp.gestion');
 });
 
@@ -85,6 +85,20 @@ Route::prefix('api')->group(function () {
       Route::post('admin/login','AdminController@api_login')->name('admin_api_login');
 
     });
+});
+
+
+Route::prefix('v1/api')->group(function () {
+
+  Route::namespace('Resac\Api')->group(function () {
+
+      Route::post('login','ApiController@login')->name('api_login');
+
+  });
+
+  Route::get('get/v1/users','AdminController@api_get_user_list')->name('api_get_user_list');
+
+  Route::post('admin/login','AdminController@api_login')->name('admin_api_login');
 });
 
 Route::get('tests/lumiere1',function(Request $request){

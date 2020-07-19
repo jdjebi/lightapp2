@@ -33,4 +33,26 @@
   color: #f44336 !important
 }
 
+.bg-light-tech{
+  background-color: #009688;
+}
+.text-light-tech{
+  color: #009688;
+}
 
+.breadcrumb-item a{
+  color: #009688;
+  font-weight: 500;
+}
+
+.bg-light-tech{
+  background-color: #009688;
+}
+.text-light-tech{
+  color: #009688;
+}
+
+.breadcrumb-item a{
+  color: #009688;
+  font-weight: 500;
+}

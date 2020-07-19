@@ -58,12 +58,12 @@
     </div>
 
     <div id='action-pad'>
-      <a class="action-pad-item-link" href="{{ route('lightapp.batiment.dp') }}">
+      <a class="action-pad-item-link" href="{{ route('lightapp.batiment.batd') }}">
         <div>
           <div class="border action-pad-item p-4">
             <div>
               <div class="text-center">
-                <img class="resac-w-100" src="{{ asset('asset/imgs/app/class2.svg') }}" alt="">
+                <img class="resac-w-100" src="{{ asset('asset/imgs/app/school.svg') }}" alt="">
               </div>
             </div>
             <div class="text-center pt-3">
