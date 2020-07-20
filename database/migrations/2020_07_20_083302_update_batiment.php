@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateBatiment extends Migration
+class UpdateBatiment extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class CreateBatiment extends Migration
      */
     public function up()
     {
-        Schema::create('batiment', function (Blueprint $table) {
-            $table->id();
+        Schema::table('batiment', function (Blueprint $table) {
+            $table->dropColumn('label');
             $table->string('nom',255);
             $table->string('code',255);
         });
@@ -27,6 +27,6 @@ class CreateBatiment extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('batiment');
+        //
     }
 }

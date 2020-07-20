@@ -18,4 +18,15 @@ class BatimentDController extends Controller
         'user' => $user,
       ]);
   	}  
+
+  	  function  surveillance(){
+    $user = Auth2::user();
+
+      $title2 = "Surveillance";
+
+      return view('lightapp.surveillance',[
+        'title2' => $title2,
+        'user' => $user,
+      ]);
+  	}  
 }

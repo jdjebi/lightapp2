@@ -13,7 +13,7 @@ class DomaineController extends Controller
 
     $user = Auth2::user();
 
-    $title2 = "Tableau de board";
+    $title2 = "Tableau de bord";
 
     return view('lightapp.domaine.dashboard',[
       'title2' => $title2,

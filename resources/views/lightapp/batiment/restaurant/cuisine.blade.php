@@ -5,14 +5,14 @@
   <div>
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item" aria-current="page"><a href="{{ route('lightapp.domaine') }}">Tableau de bord</a></li>
+        <li class="breadcrumb-item" aria-current="page"><a href="{{ route('lightapp.hub') }}">Tableau de bord</a></li>
         <li class="breadcrumb-item" aria-current="page"><a href="{{ route('lightapp.batiment') }}">Batiments</a></li>
         <li class="breadcrumb-item active" aria-current="page"><a href="{{ route('lightapp.batiment.cuisine') }}">Cuisine</a></li>
       </ol>
     </nav>
   </div>
 
-  <div class="text-center h2 mb-4">Restaurant de l'ESATIC</div>
+  <div class="text-center h2 mb-4  text-light-tech">Restaurant de l'ESATIC</div>
 
 <div class="d-flex flex-wrap ">
 
@@ -114,13 +114,13 @@
 @section('scripts')
 <script type="text/javascript" src="{{ asset('asset/js/extras/sweetalert2.all.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('asset/js/error_modal.js') }}"></script>
-<script type="text/javascript" src="{{ asset('asset/js/esp.js') }}"></script>
+<script type="text/javascript" src="{{ asset('asset/js/lightapp/esp.js') }}"></script>
 
 <script type="text/javascript">
 
 function get_temperature_cuisine(){
 
-	var esp_ip_get_temp_cuisine = ESP_PI + "/cuisine/temperature/get/";
+	var esp_ip_get_temp_cuisine = ESP_IP + "/cuisine/temperature/get/";
 	var temperature = "30";
 
 	x = $.get({

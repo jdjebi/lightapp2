@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateBatiment extends Migration
+class DeleteTables2 extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class CreateBatiment extends Migration
      */
     public function up()
     {
-        Schema::create('batiment', function (Blueprint $table) {
-            $table->id();
-            $table->string('nom',255);
-            $table->string('code',255);
-        });
+        Schema::dropIfExists('searchindexuser');
+        Schema::dropIfExists('new_features');
     }
 
     /**
@@ -27,6 +24,6 @@ class CreateBatiment extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('batiment');
+        //
     }
 }

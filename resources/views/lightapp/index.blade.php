@@ -37,7 +37,7 @@
               <div class="text-center">
                 <img class="text-center" src="{{ asset('asset/imgs/undraw/login.svg') }}" alt="" width="80px">
               </div>
-              <h3 class="mt-3 mb-4 text-center text-muted">Bienvenue sur LightApp</h3>
+              <h3 class="mt-3 mb-4 text-center text-muted">Bienvenue sur ECOTIC</h3>
               <div v-if="is_error" id="error-box" class="alert alert-danger d-none">
                 @{{ error_message }}
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">

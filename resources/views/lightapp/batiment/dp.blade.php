@@ -5,14 +5,14 @@
   <div>
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item" aria-current="page"><a href="{{ route('lightapp.domaine') }}">Tableau de bord</a></li>
+        <li class="breadcrumb-item" aria-current="page"><a href="{{ route('lightapp.hub') }}">Tableau de bord</a></li>
         <li class="breadcrumb-item" aria-current="page"><a href="{{ route('lightapp.batiment') }}">Batiments</a></li>
         <li class="breadcrumb-item active" aria-current="page"><a href="{{ route('lightapp.batiment.dp') }}">Direction pédagogique</a></li>
       </ol>
     </nav>
   </div>
 
-<div class="text-center h2 mb-4">Direction de la Pédagogique</div>
+<div class="text-center h2 mb-4 text-light-tech">Direction de la Pédagogique</div>
 
 <div class="d-flex flex-wrap">
 

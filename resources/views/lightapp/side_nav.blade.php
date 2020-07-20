@@ -8,7 +8,7 @@
 
     <ul class="nav flex-column">
       <li class="nav-item">
-        <a class="nav-link active" href="{{ route('lightapp.domaine') }}">
+        <a class="nav-link active" href="{{ route('lightapp.hub') }}">
           <i class="fa fa-tachometer-alt"></i>
           Tableau de bord
         </a>
@@ -28,16 +28,32 @@
           Batiments
         </a>
       </li>
+
+      <!--
       <li class="nav-item">
         <a class="nav-link" href="">
           <i class="fa fa-laptop" style="color: #3f51b5"></i>
           Hyperviseur
         </a>
       </li>
+      -->
+
       <li class="nav-item">
-        <a class="nav-link" href="">
-          <i class="fa fa-exclamation-triangle text-danger"></i>
+        <a class="nav-link" href="{{ route('lightapp.batiment') }}">
+          <i class="fa fa-exclamation-triangle text-warning"></i>
           Signalement
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ route('lightapp.surveillance') }}">
+          <i class="fa fa-eye text-danger"></i>
+          Mode Surveillance
+        </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="{{ route('appareils.index') }}">
+          <i class="fa fa-plug text-light-tech"></i>
+           Appareils
         </a>
       </li>
     </ul>

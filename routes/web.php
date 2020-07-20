@@ -59,12 +59,16 @@ Route::middleware("guest")->group(function(){
 /* Application */
 
 Route::middleware("auth")->group(function(){
-  Route::get('/','LightApp\DomaineController@index')->name('lightapp.domaine');
+  Route::get('/','LightApp\DomaineController@index')->name('lightapp.hub');
   Route::get('/batiments','LightApp\Batiment\BatimentController')->name('lightapp.batiment');
   Route::get('/batiments/restaurant','LightApp\Batiment\CuisineController@index')->name('lightapp.batiment.cuisine');
   Route::get('/batiments/DP','LightApp\Batiment\DpController@index')->name('lightapp.batiment.dp');
   Route::get('/batiments/batimentD','LightApp\Batiment\BatimentDController@index')->name('lightapp.batiment.batd');
-  Route::get('/gestion/appareils','LightApp\Gestion\GestionController@index')->name('lightapp.gestion');
+
+  Route::get('/surveillance','LightApp\Batiment\BatimentDController@surveillance')->name('lightapp.surveillance');
+
+  Route::resource('appareils', 'LightApp\AppareilController');
+
 });
 
 Route::get('user/deconnexion','AuthController@logout')->name('logout');
@@ -73,12 +77,6 @@ Route::get('user/deconnexion','AuthController@logout')->name('logout');
 
 Route::prefix('api')->group(function () {
     Route::name('api.')->group(function () {
-
-      Route::namespace('LightApp\Api')->group(function () {
-
-          Route::post('domaine/create','DomaineApiController@create')->name('domaine.create');
-
-      });
 
       Route::get('get/v1/users','AdminController@api_get_user_list')->name('api_get_user_list');
 

@@ -31,7 +31,7 @@
         </nav>
       </div>
 
-      <div class="display-4 mt-5 text-center font-40 mb-5">Administration</div>
+      <div class="display-4 mt-5 text-center font-40 mb-5">ECOTIC</div>
 
       <div class="d-flex justify-content-around flex-wrap">
 
@@ -66,6 +66,25 @@
                 <div class="text-center pt-3">
                   <div class="text-muted">
                     <span class="font-20">Signalement</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div id='action-pad'>
+          <a class="action-pad-item-link" href="#">
+            <div>
+              <div class="border action-pad-item p-4">
+                <div>
+                  <div class="text-center">
+                    <img class="resac-w-100" src="{{ asset('asset/imgs/app/plug.svg') }}" alt="">
+                  </div>
+                </div>
+                <div class="text-center pt-3">
+                  <div class="text-muted">
+                    <span class="font-20">Appareils</span>
                   </div>
                 </div>
               </div>

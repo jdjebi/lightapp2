@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateBatiment extends Migration
+class AddSignalement extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,12 @@ class CreateBatiment extends Migration
      */
     public function up()
     {
-        Schema::create('batiment', function (Blueprint $table) {
+         Schema::create('Signalement', function (Blueprint $table) {
             $table->id();
-            $table->string('nom',255);
-            $table->string('code',255);
+            $table->string('sujet',255);
+            $table->foreignId('appareil_id');
+            $table->integer('statut');
+            $table->timestamps();
         });
     }
 
@@ -27,6 +29,6 @@ class CreateBatiment extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('batiment');
+        //
     }
 }
